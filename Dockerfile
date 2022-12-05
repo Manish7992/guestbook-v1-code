@@ -12,7 +12,6 @@ ADD public/index.html /app/public/index.html
 ADD public/script.js /app/public/script.js
 ADD public/style.css /app/public/style.css
 ADD public/jquery.min.js /app/public/jquery.min.js
-
 WORKDIR /app
 CMD ["./guestbook"]
 EXPOSE 3000
