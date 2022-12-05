@@ -1,5 +1,5 @@
 FROM golang as builder
-RUN go install github.com/codegangsta/negroni
+RUN go install github.com/codegangsta/negroni@latest
 RUN go install github.com/gorilla/mux github.com/xyproto/simpleredis
 COPY main.go .
 RUN go build main.go
